@@ -1,8 +1,9 @@
+// Packages
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-// import Promise from 'es6-promise';
 
+// Components
 import App from "./components/App"
 import Home from "./components/Home"
 import SignIn from "./components/SignIn"
@@ -12,18 +13,18 @@ import Topics from "./components/Topics"
 import NewTopic from "./components/NewTopic"
 import UsersList from "./components/Users/List"
 import UsersEdit from "./components/Users/Edit"
+import services from "../config/services.js"
 
+// Css
 require("./assets/css/main.css");
 
+// Use statements
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-Vue.http.options.root = 'http://localhost:3000';
-
-export var router = new VueRouter;
+// Exports
 export default Vue;
-// export default Promise.polyfill();
-
+export let router = new VueRouter;
 
 // Routes
 router.map({
