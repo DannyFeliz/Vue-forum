@@ -14,10 +14,6 @@
   import store from '../store/index.js';
   export default {
 
-    ready() {
-      console.log("TEst");
-
-    },
     data() {
       return {
         sections: []

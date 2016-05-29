@@ -5,7 +5,7 @@
     <p>User updated</p>
   </div>
   <form class="form-group" @submit.prevent="update()">
-    <input type="text" v-model="id">
+    <input type="hidden" v-model="id">
     <div class="form-group">
       <label for="email">Email</label>
 
@@ -39,7 +39,6 @@
                 this.id = user.id;
                 this.email = user.email;
                 this.username = user.username;
-                console.log(user);
               });
           }
         },
@@ -51,7 +50,6 @@
             username: this.username
           };
           user.update(this, userData);
-          console.log("Updated? ", this.updated);
         }
       }
     }
