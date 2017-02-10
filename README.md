@@ -1,5 +1,7 @@
 # forum
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DannyFeliz/Vue-forum.svg)](https://greenkeeper.io/)
+
 > forum app
 
 ## Build Setup
